@@ -108,34 +108,7 @@ Profile
 <p>  您可以通过Email联系到我</p>
   
 	</div>
-		<footer class="article-footer clearfix">
-
-
-
-
-<div class="article-share" id="share">
-
-  <div data-url="keencn.github.io/2014/06/05/about-me/" data-title="About Me | Ken&#39;s Blog" data-tsina="null" class="share clearfix">
-  </div>
-
-</div>
-</footer>   	       
 	</article>
-	
-<nav class="article-nav clearfix">
- 
-
-<div class="next">
-<a href="/2014/06/04/hello-world/"  title="Hello World">
- <strong>NEXT:</strong><br/> 
- <span>Hello World
-</span>
-</a>
-</div>
-
-</nav>
-
-	
 </div>  
       <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
@@ -253,39 +226,6 @@ $(document).ready(function(){
   };
 });
 </script>
-
-
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var $this = $('.share'),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina');
-  var html = [
-  '<a href="#" class="overlay" id="qrcode"></a>',
-  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
-  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
-  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
-  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
-  '<span title="Share to"></span>'
-  ].join('');
-  $this.append(html);
-  $('.article-share-qrcode').click(function(){
-    var imgSrc = $('#qrcode-pic').attr('data-src');
-    $('#qrcode-pic').attr('src', imgSrc);
-    $('#qrcode-pic').load(function(){
-        $('.qrcode strong').text(' ');
-    });
-  });
-});     
-</script>
-
-
-
-
 
 <div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
 <a title="返回顶部"><img src="/img/scrollup.png"/></a>
